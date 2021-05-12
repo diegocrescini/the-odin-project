@@ -62,8 +62,9 @@ li .profile-pick:hover {
     height: calc(100% - 101px);
     margin: 0 auto;
     padding-bottom: 101px;
-    
 }
+
+
 /* SEARCH BAR */ 
 input.search-bar {
     background: url(/img/outline_search_black_24dp.png) no-repeat;
@@ -121,7 +122,7 @@ footer {
     background-color: #f2f2f2;
     position: absolute;
     bottom: 0;
-    height: 101px;    
+    min-height: 101px;    
     width: 100%;
 }
 footer h2, footer li {
@@ -151,7 +152,4 @@ footer ul {
 footer div {
     display: flex;
     justify-content: center;
-}
-@media (max-width: 768px) {
-
 }
