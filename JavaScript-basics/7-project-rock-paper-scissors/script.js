@@ -13,7 +13,8 @@ function turnLoop(){
     turnWinnerIs(playerChoice, cpuChoice);
 }
 
-fiveTurnGame();
+//Commented game loop - Probably delete this later
+//fiveTurnGame();
 
 //CPU turn 
 function cpuPlay() {
@@ -36,7 +37,37 @@ function cpuPlay() {
     
 }
 
-//Player turn
+
+//NEW FUCNTION (now with buttons!) Player Turn
+
+
+
+function playerPlay(){
+    let playerNumber = ;    
+    switch (playerNumber.toLowerCase()){
+        case "rock":
+            playerChoice = "Rock";
+            break;
+        case "paper":
+            playerChoice = "Paper";
+            break;
+        case "scissors":
+            playerChoice = "Scissor";
+            break;
+        default:
+        console.log('WRONG INPUT')
+        playerChoice = playerPlay();
+        
+    }
+    
+    console.log(`You chose ${playerChoice}`);
+    return playerChoice;
+ }
+
+
+
+
+//OLD FUNCTION Player turn
 /*
 function playerPlay(){
     let playerNumber = prompt('Please type in "Rock", "Paper" or "Scissors"');    
@@ -116,25 +147,3 @@ function fiveTurnGame(){
 
 
 
-/**************************************************OLD CODE
-function playerPlay(){
-    let playerSelection = prompt('Please choose "Rock" ("1"), "Paper" (2), or "Scissors" (3)');
-    switch (playerSelection){
-        case 1:
-            let playerChose = "Rock"2";
-            break;
-        case 2:
-            "l"et playerChose = "Paper";
-            break;
-        case 3:
-            let playerChose = "Scissor";
-            break;
-        default: 
-            prompt('Wrong Selection, please choose "Rock" (1), "Paper" (2), or "Scissors" (3)');
-    }
-}
-
-function gameTurn(){
-
-}
-*/
