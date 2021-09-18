@@ -37,6 +37,7 @@ function cpuPlay() {
 }
 
 //Player turn
+/*
 function playerPlay(){
     let playerNumber = prompt('Please type in "Rock", "Paper" or "Scissors"');    
     switch (playerNumber.toLowerCase()){
@@ -57,9 +58,8 @@ function playerPlay(){
     
     console.log(`You chose ${playerChoice}`);
     return playerChoice;
-       
-       
-}
+ }
+ */
 //Turn comparison
 function turnWinnerIs(a, b){
     if(a == "Rock" && b == "Paper"
